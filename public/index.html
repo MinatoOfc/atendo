@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Atendo — Atendimento com IA para seu e-commerce</title>
+<meta name="description" content="A Atendo responde seus clientes automaticamente com inteligência artificial: rastreios, trocas, devoluções e dúvidas resolvidas em segundos, 24h por dia." />
+<link rel="stylesheet" href="/theme.css" />
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header id="header">
+  <div class="wrap nav">
+    <a href="#top" class="logo"><span class="logo-mark">◈</span> Atendo</a>
+    <nav class="nav-links">
+      <a href="#recursos">Recursos</a>
+      <a href="#como">Como funciona</a>
+      <a href="#integracoes">Integrações</a>
+      <a href="#precos">Preços</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="/login" class="btn btn-ghost">Entrar</a>
+      <a href="/signup" class="btn btn-primary">Começar grátis</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="overlay" id="overlay"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="#recursos">Recursos</a>
+  <a href="#como">Como funciona</a>
+  <a href="#integracoes">Integrações</a>
+  <a href="#precos">Preços</a>
+  <a href="#faq">FAQ</a>
+  <a href="/login" class="btn btn-ghost btn-block">Entrar</a>
+  <a href="/signup" class="btn btn-primary btn-block">Começar grátis</a>
+</nav>
+
+<span id="top"></span>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="wrap">
+    <span class="badge"><span class="dot"></span> IA que atende como o seu melhor funcionário</span>
+    <h1>Seu atendimento no piloto automático,<br><span class="grad">24 horas por dia</span></h1>
+    <p class="sub">A Atendo responde seus clientes com inteligência artificial: rastreios, trocas, devoluções e dúvidas resolvidas em segundos — sem você mexer um dedo.</p>
+    <div class="hero-cta">
+      <a href="/signup" class="btn btn-primary btn-lg">Testar grátis por 7 dias</a>
+      <a href="#como" class="btn btn-ghost btn-lg">Ver como funciona</a>
+    </div>
+    <p class="hero-note">Sem cartão de crédito · <strong>Configuração em 5 minutos</strong> · Cancele quando quiser</p>
+
+    <div class="mockup reveal">
+      <div class="mockup-bar"><i></i><i></i><i></i></div>
+      <div class="chat" id="chat">
+        <div class="msg client"><small>Cliente · 14:02</small>Oi, comprei ontem e queria saber onde está meu pedido 😕</div>
+        <div class="msg ai"><small>Atendo IA · 14:02</small>Oi, Marina! 😊 Encontrei seu pedido #10482. Ele já saiu para entrega e chega até quinta-feira. Quer que eu te mande o link de rastreio?</div>
+        <div class="msg client"><small>Cliente · 14:03</small>Quero sim! E dá pra trocar o tamanho depois?</div>
+        <div class="msg ai"><small>Atendo IA · 14:03</small>Claro! Você tem 30 dias para troca. Aqui está seu rastreio 📦 e o link para solicitar a troca quando precisar. Posso ajudar em algo mais?</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <p>Integrado com as plataformas que você já usa</p>
+    <div class="logos">
+      <span>Shopify</span><span>Nuvemshop</span><span>WooCommerce</span><span>Gmail</span><span>WhatsApp</span><span>Instagram</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Features ===== -->
+<section class="sec" id="recursos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Recursos</span>
+      <h2>Tudo que seu suporte precisa, automático</h2>
+      <p>A Atendo entende o cliente, consulta seus pedidos e responde com o tom da sua marca.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><div class="ico">🤖</div><h3>Respostas com IA</h3><p>A inteligência artificial lê a mensagem, entende o contexto e responde de forma natural, em qualquer idioma.</p></div>
+      <div class="card reveal"><div class="ico">📦</div><h3>Rastreio automático</h3><p>Puxa o status do pedido direto da sua loja e informa o cliente sem você precisar procurar nada.</p></div>
+      <div class="card reveal"><div class="ico">🔄</div><h3>Trocas e devoluções</h3><p>Gera formulários e conduz o cliente pelo processo de troca ou devolução automaticamente.</p></div>
+      <div class="card reveal"><div class="ico">🎯</div><h3>Retenção de vendas</h3><p>Oferece cupons de desconto para reter clientes que querem cancelar ou devolver um pedido.</p></div>
+      <div class="card reveal"><div class="ico">🌙</div><h3>Atende 24/7</h3><p>Seu cliente é respondido na hora, de madrugada ou no fim de semana. Nunca mais um ticket parado.</p></div>
+      <div class="card reveal"><div class="ico">📊</div><h3>Painel completo</h3><p>Acompanhe conversas, métricas e satisfação em um dashboard simples e em tempo real.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== How ===== -->
+<section class="sec" id="como" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Como funciona</span>
+      <h2>Do zero ao automático em 3 passos</h2>
+      <p>Nada de código. Você conecta, ajusta e deixa a IA trabalhar.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="num">1</div><h3>Conecte sua loja</h3><p>Integre a Shopify, Nuvemshop ou seu e-mail em poucos cliques. A Atendo já entende seus pedidos.</p></div>
+      <div class="step reveal"><div class="num">2</div><h3>Ajuste o tom da IA</h3><p>Escreva como sua marca fala, defina regras e cupons. A IA responde do seu jeito.</p></div>
+      <div class="step reveal"><div class="num">3</div><h3>Ative e relaxe</h3><p>Pronto. A IA responde os clientes sozinha e você acompanha tudo pelo painel.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Stats ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat reveal"><div class="n" data-count="92" data-suffix="%">0%</div><div class="l">dos tickets resolvidos pela IA</div></div>
+      <div class="stat reveal"><div class="n" data-count="30" data-suffix="s">0s</div><div class="l">tempo médio de resposta</div></div>
+      <div class="stat reveal"><div class="n" data-count="24" data-suffix="/7">0</div><div class="l">disponível sem parar</div></div>
+      <div class="stat reveal"><div class="n" data-count="15" data-suffix="h">0h</div><div class="l">economizadas por semana</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Integrations ===== -->
+<section class="sec" id="integracoes" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Integrações</span>
+      <h2>Conecta onde seu cliente está</h2>
+      <p>Centralize e-mail, redes sociais e sua loja em um só lugar.</p>
+    </div>
+    <div class="integrations">
+      <div class="chip reveal"><span class="e">🛍️</span> Shopify</div>
+      <div class="chip reveal"><span class="e">☁️</span> Nuvemshop</div>
+      <div class="chip reveal"><span class="e">🌲</span> WooCommerce</div>
+      <div class="chip reveal"><span class="e">✉️</span> Gmail / Outlook</div>
+      <div class="chip reveal"><span class="e">💬</span> WhatsApp</div>
+      <div class="chip reveal"><span class="e">📸</span> Instagram</div>
+      <div class="chip reveal"><span class="e">💳</span> Stripe</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Pricing ===== -->
+<section class="sec" id="precos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Preços</span>
+      <h2>Planos que cabem no seu momento</h2>
+      <p>Comece grátis e cresça no seu ritmo. Sem fidelidade.</p>
+    </div>
+
+    <div class="toggle-wrap reveal">
+      <span id="lblMonth" class="active">Mensal</span>
+      <div class="switch" id="switch" role="button" aria-label="Alternar cobrança"><div class="knob"></div></div>
+      <span id="lblYear">Anual <span class="save-badge">-20%</span></span>
+    </div>
+
+    <div class="prices">
+      <div class="price reveal">
+        <h3>Iniciante</h3>
+        <p class="desc">Para quem está começando a automatizar.</p>
+        <div class="amount">R$ <span class="val" data-m="97" data-y="77">97</span><small>/mês</small></div>
+        <div class="per" id="per1">cobrado mensalmente</div>
+        <ul>
+          <li><span class="ck">✓</span> Até 500 conversas/mês</li>
+          <li><span class="ck">✓</span> 1 loja conectada</li>
+          <li><span class="ck">✓</span> Respostas com IA</li>
+          <li><span class="ck">✓</span> Rastreio automático</li>
+        </ul>
+        <a href="/signup" class="btn btn-ghost btn-block">Começar grátis</a>
+      </div>
+
+      <div class="price pop reveal">
+        <h3>Profissional</h3>
+        <p class="desc">O favorito de quem quer escalar.</p>
+        <div class="amount">R$ <span class="val" data-m="197" data-y="157">197</span><small>/mês</small></div>
+        <div class="per" id="per2">cobrado mensalmente</div>
+        <ul>
+          <li><span class="ck">✓</span> Até 3.000 conversas/mês</li>
+          <li><span class="ck">✓</span> 3 lojas conectadas</li>
+          <li><span class="ck">✓</span> Trocas e devoluções</li>
+          <li><span class="ck">✓</span> Cupons de retenção</li>
+          <li><span class="ck">✓</span> Suporte prioritário</li>
+        </ul>
+        <a href="/signup" class="btn btn-primary btn-block">Testar 7 dias grátis</a>
+      </div>
+
+      <div class="price reveal">
+        <h3>Escala</h3>
+        <p class="desc">Para operações de alto volume.</p>
+        <div class="amount">R$ <span class="val" data-m="397" data-y="317">397</span><small>/mês</small></div>
+        <div class="per" id="per3">cobrado mensalmente</div>
+        <ul>
+          <li><span class="ck">✓</span> Conversas ilimitadas</li>
+          <li><span class="ck">✓</span> Lojas ilimitadas</li>
+          <li><span class="ck">✓</span> Equipe e permissões</li>
+          <li><span class="ck">✓</span> API e integrações custom</li>
+          <li><span class="ck">✓</span> Gerente de conta</li>
+        </ul>
+        <a href="/signup" class="btn btn-ghost btn-block">Falar com vendas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section class="sec" id="depoimentos" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Depoimentos</span>
+      <h2>Lojistas que dormem tranquilos</h2>
+    </div>
+    <div class="tgrid">
+      <div class="quote reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Reduzi 90% dos e-mails de 'cadê meu pedido'. A IA responde melhor e mais rápido que eu conseguia."</p>
+        <div class="who"><div class="avatar">RC</div><div><b>Rafael Costa</b><span>Loja de moda · SP</span></div></div>
+      </div>
+      <div class="quote reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Configurei em uma tarde e no dia seguinte já estava respondendo cliente sozinha. Surreal."</p>
+        <div class="who"><div class="avatar">JM</div><div><b>Juliana Mendes</b><span>Cosméticos · RJ</span></div></div>
+      </div>
+      <div class="quote reveal">
+        <div class="stars">★★★★★</div>
+        <p>"O cupom de retenção segurou várias devoluções. Se pagou no primeiro mês tranquilo."</p>
+        <div class="who"><div class="avatar">LF</div><div><b>Lucas Ferreira</b><span>Eletrônicos · MG</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Dúvidas</span>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq">
+      <div class="qa reveal"><button>Preciso saber programar? <span class="plus">+</span></button><div class="ans"><div>Não. A Atendo foi feita para lojistas. Você conecta sua loja em poucos cliques e configura tudo por um painel visual, sem código.</div></div></div>
+      <div class="qa reveal"><button>A IA responde do jeito da minha marca? <span class="plus">+</span></button><div class="ans"><div>Sim. Você define o tom de voz, regras e informações da loja. A IA usa isso para responder como se fosse você.</div></div></div>
+      <div class="qa reveal"><button>Funciona com a minha plataforma? <span class="plus">+</span></button><div class="ans"><div>Integramos com Shopify, Nuvemshop, WooCommerce, além de e-mail, WhatsApp e Instagram. Novas integrações são adicionadas com frequência.</div></div></div>
+      <div class="qa reveal"><button>Como funciona o teste grátis? <span class="plus">+</span></button><div class="ans"><div>Você tem 7 dias para testar sem cartão de crédito. Se gostar, escolhe um plano. Se não, é só não continuar — sem cobrança.</div></div></div>
+      <div class="qa reveal"><button>Posso cancelar quando quiser? <span class="plus">+</span></button><div class="ans"><div>Sim, não há fidelidade. Você cancela a qualquer momento direto pelo painel, com um clique.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="sec" id="cadastro">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <h2>Deixe a IA cuidar do atendimento hoje</h2>
+      <p>Crie sua conta grátis e veja a Atendo respondendo seus clientes em minutos.</p>
+      <form class="signup" id="ctaForm" novalidate>
+        <input type="email" id="email" placeholder="Seu melhor e-mail" autocomplete="email" />
+        <button type="submit" class="btn btn-primary btn-lg">Começar grátis</button>
+      </form>
+      <div class="form-msg" id="formMsg"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fcol brand">
+        <a href="#top" class="logo"><span class="logo-mark">◈</span> Atendo</a>
+        <p>Atendimento com inteligência artificial para lojas que querem crescer sem perder o cliente de vista.</p>
+      </div>
+      <div class="fcol">
+        <h4>Produto</h4>
+        <a href="#recursos">Recursos</a><a href="#precos">Preços</a><a href="#integracoes">Integrações</a><a href="#faq">FAQ</a>
+      </div>
+      <div class="fcol">
+        <h4>Empresa</h4>
+        <a href="#">Sobre</a><a href="#">Blog</a><a href="#">Contato</a><a href="#">Parceiros</a>
+      </div>
+      <div class="fcol">
+        <h4>Legal</h4>
+        <a href="#">Termos de uso</a><a href="#">Privacidade</a><a href="#">Reembolso</a>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© 2026 Atendo. Todos os direitos reservados.</span>
+      <span>Feito com ☕ e IA no Brasil</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var header = document.getElementById('header');
+  function onScroll(){ header.classList.toggle('scrolled', window.scrollY > 20); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  var burger = document.getElementById('hamburger');
+  var menu = document.getElementById('mobileMenu');
+  var overlay = document.getElementById('overlay');
+  function toggleMenu(open){
+    var isOpen = open !== undefined ? open : !menu.classList.contains('open');
+    menu.classList.toggle('open', isOpen);
+    overlay.classList.toggle('open', isOpen);
+    burger.classList.toggle('open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+  burger.addEventListener('click', function(){ toggleMenu(); });
+  overlay.addEventListener('click', function(){ toggleMenu(false); });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ toggleMenu(false); }); });
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      var id = this.getAttribute('href');
+      if(id.length < 2) return;
+      var target = document.querySelector(id);
+      if(target){
+        e.preventDefault();
+        var y = target.getBoundingClientRect().top + window.scrollY - 70;
+        window.scrollTo({top:y, behavior:'smooth'});
+      }
+    });
+  });
+
+  var sw = document.getElementById('switch');
+  var lblM = document.getElementById('lblMonth');
+  var lblY = document.getElementById('lblYear');
+  var pers = [document.getElementById('per1'),document.getElementById('per2'),document.getElementById('per3')];
+  var yearly = false;
+  function setPricing(){
+    sw.classList.toggle('year', yearly);
+    lblM.classList.toggle('active', !yearly);
+    lblY.classList.toggle('active', yearly);
+    document.querySelectorAll('.val').forEach(function(el){
+      el.textContent = yearly ? el.getAttribute('data-y') : el.getAttribute('data-m');
+    });
+    pers.forEach(function(p){ if(p) p.textContent = yearly ? 'por mês, cobrado anualmente' : 'cobrado mensalmente'; });
+  }
+  sw.addEventListener('click', function(){ yearly = !yearly; setPricing(); });
+  setPricing();
+
+  document.querySelectorAll('.qa button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.parentElement;
+      var ans = item.querySelector('.ans');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.qa').forEach(function(q){
+        q.classList.remove('open'); q.querySelector('.ans').style.maxHeight = null;
+      });
+      if(!isOpen){ item.classList.add('open'); ans.style.maxHeight = ans.scrollHeight + 'px'; }
+    });
+  });
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('show'); io.unobserve(en.target); } });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  var counted = false, statsSec = document.querySelector('.stats');
+  function animateCounts(){
+    document.querySelectorAll('.n[data-count]').forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'),10), suffix = el.getAttribute('data-suffix')||'', t0 = performance.now(), dur=1400;
+      function tick(now){ var p=Math.min((now-t0)/dur,1), e=1-Math.pow(1-p,3); el.textContent=Math.round(e*target)+suffix; if(p<1) requestAnimationFrame(tick); }
+      requestAnimationFrame(tick);
+    });
+  }
+  if(statsSec){
+    var io2 = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting && !counted){ counted=true; animateCounts(); io2.disconnect(); } });
+    }, {threshold:.4});
+    io2.observe(statsSec);
+  }
+
+  // CTA form -> leva pro cadastro já com o e-mail preenchido
+  var form = document.getElementById('ctaForm');
+  var email = document.getElementById('email');
+  var msg = document.getElementById('formMsg');
+  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var val = email.value.trim();
+    msg.className = 'form-msg';
+    if(!re.test(val)){ email.classList.add('err'); msg.classList.add('bad'); msg.textContent='Digite um e-mail válido.'; return; }
+    window.location.href = '/signup?email=' + encodeURIComponent(val);
+  });
+  email.addEventListener('input', function(){ email.classList.remove('err'); msg.textContent=''; msg.className='form-msg'; });
+})();
+</script>
+</body>
+</html>

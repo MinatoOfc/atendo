@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Criar conta — Atendo</title>
+<link rel="stylesheet" href="/theme.css" />
+</head>
+<body>
+<a href="/" class="auth-back">← Voltar</a>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <a href="/" class="logo"><span class="logo-mark">◈</span> Atendo</a>
+    <h1>Crie sua conta grátis</h1>
+    <p class="subtitle">7 dias de teste · sem cartão de crédito</p>
+
+    <form id="form" novalidate>
+      <div class="field">
+        <label for="name">Nome</label>
+        <input type="text" id="name" placeholder="Seu nome" autocomplete="name" />
+      </div>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="voce@email.com" autocomplete="email" />
+      </div>
+      <div class="field">
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="Mínimo 6 caracteres" autocomplete="new-password" />
+      </div>
+      <div class="auth-msg" id="msg"></div>
+      <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit">Criar conta</button>
+    </form>
+
+    <div class="auth-foot">Já tem conta? <a href="/login">Entrar</a></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var params = new URLSearchParams(location.search);
+  if(params.get('email')) document.getElementById('email').value = params.get('email');
+
+  var form = document.getElementById('form');
+  var msg = document.getElementById('msg');
+  var btn = document.getElementById('submit');
+  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var password = document.getElementById('password').value;
+    msg.className = 'auth-msg';
+    if(!name){ return fail('Digite seu nome.'); }
+    if(!re.test(email)){ return fail('E-mail inválido.'); }
+    if(password.length < 6){ return fail('A senha precisa ter pelo menos 6 caracteres.'); }
+
+    btn.disabled = true; btn.textContent = 'Criando...';
+    try{
+      var r = await fetch('/api/signup', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ name, email, password })
+      });
+      var data = await r.json();
+      if(!r.ok){ btn.disabled=false; btn.textContent='Criar conta'; return fail(data.error || 'Erro ao criar conta.'); }
+      msg.className='auth-msg ok'; msg.textContent='Conta criada! Redirecionando...';
+      location.href = '/app';
+    }catch(err){
+      btn.disabled=false; btn.textContent='Criar conta';
+      fail('Falha de conexão. Tente novamente.');
+    }
+  });
+  function fail(t){ msg.className='auth-msg bad'; msg.textContent=t; }
+})();
+</script>
+</body>
+</html>
